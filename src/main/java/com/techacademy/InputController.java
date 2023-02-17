@@ -15,11 +15,12 @@ public class InputController {
         return "input";
     }
 
-    @PostMapping("/confirm")
+    @PostMapping("/output")
     public String postForm(@RequestParam("val") String val, Model model) {
         // フォームから送信されてきた値をModelに登録
         model.addAttribute("val", val);
-        // confirm.htmlに画面遷移
-        return "confirm";
-    }
-}
+        // output.htmlに画面遷移
+        return "output";
+        
+        
+    }}

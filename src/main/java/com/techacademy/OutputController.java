@@ -9,5 +9,5 @@ public class OutputController {
 
     @GetMapping("/output")
     public String getLink(Model model) {
-        model.addAttribute("id", "あいうえお");
+        model.addAttribute("id", "' + ${val} + '");
         return "output";}}
